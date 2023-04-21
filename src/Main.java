@@ -3,6 +3,8 @@ public class Main {
     public static void main(String[] args) {
 
 //      Задачи по ссылке https://skyengpublic.notion.site/1-2-070c491064914f4b8608fa55a3424472
+//      Решения ниже в методах 1.n.m Здесь тесты и проверка.
+
         System.out.println("\nЗадача №1.2.6");
         task1_2_6(); // Задача 6 из раздела 1.2 Переменные доп.задачи
 
@@ -41,7 +43,7 @@ public class Main {
         task1_4_5(20); System.out.println();
     }
 
-    public static void task1_2_6() {
+    public static void task1_2_6() { // Задача 6 из раздела 1.2
         int a = 12;
         int b = 27;
         int c = 44;
@@ -53,7 +55,7 @@ public class Main {
         System.out.println(result);
     }
 
-    public static void task1_2_7(int a, int b) {
+    public static void task1_2_7(int a, int b) { // Задача 7 из раздела 1.2
         System.out.println(a + " " + b );
         a += b;
         b  = a - b;
@@ -61,13 +63,13 @@ public class Main {
         System.out.println(a + " " + b );
     }
 
-    public static void task1_2_8 (int a) { // содержательная часть задачи 1.2.8
+    public static void task1_2_8 (int a) { // Задача 8 из раздела 1.2
         System.out.print("средняя цифра числа " + a +  " это: ");
         a = a/10;
         System.out.println((a % 10));
     }
 
-    public static double task1_3_6 (int age, int salary) { // содержательная часть задачи 1.3.6
+    public static double task1_3_6 (int age, int salary) { // Задача 6 из раздела 1.3
         if (age < 23) {
             if (salary < 50000) {
                 return 2 * salary;}
@@ -87,7 +89,7 @@ public class Main {
     }
 
 
-    public static void task1_3_7 (int age, int salary, int wantedSum) { // содержательная часть задачи 1.3.7
+    public static void task1_3_7 (int age, int salary, int wantedSum) { // Задача 7 из раздела 1.3
         double rate = 1.10; // процентная ставка 1 + n/100, n - заданный процент
 
         boolean salaryLimit = ( salary < 80000 ); // проверяем зарплату
@@ -115,8 +117,7 @@ public class Main {
                     " равен " + limitCredit + " рублей. Платеж по кредиту " + creditPaymentFormatted + " рублей. Отказано");
         }
     }
-    // содержательная часть задачи 1.4.4
-    public static void task1_4_4 (int p, int q, int n) {
+    public static void task1_4_4 (int p, int q, int n) { // Задача 4 из раздела 1.4
 //  p,q - простые числа  для проверки на кратность чисел в последовательности от 1 до n
         String strOutput;
         for (int i = 1; i <= n; i++) {
@@ -130,8 +131,7 @@ public class Main {
             System.out.println(strOutput);
         }
     }
-
-    public static void task1_4_5 (int n) {
+    public static void task1_4_5 (int n) { // задача 5 из раздела 1.4
 //  Печать первых n>=2 чисел Фибоначчи
         int f = 0;
         System.out.print(f);
